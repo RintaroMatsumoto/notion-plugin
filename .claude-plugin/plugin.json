@@ -1,0 +1,10 @@
+{
+  "name": "notion-plugin",
+  "version": "0.0.1",
+  "description": "[Pre-release skeleton] Notion integration for Claude: schema setup, bulk edit, sync, and cross-reference automation.",
+  "author": {"name": "Rintaro Matsumoto"},
+  "homepage": "https://github.com/RintaroMatsumoto/notion-plugin",
+  "repository": "https://github.com/RintaroMatsumoto/notion-plugin",
+  "license": "MIT",
+  "keywords": ["notion", "knowledge-management", "claude", "productivity", "automation"]
+}
