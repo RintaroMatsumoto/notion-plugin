@@ -1,10 +1,17 @@
 {
   "name": "notion-plugin",
-  "version": "0.0.1",
-  "description": "[Pre-release skeleton] Notion integration for Claude: schema setup, bulk edit, sync, and cross-reference automation.",
+  "version": "0.1.0",
+  "description": "Notion integration for Claude: schema setup, bulk edit, two-way Markdown sync, cross-reference, and template instantiation — all stdlib-only Python.",
   "author": {"name": "Rintaro Matsumoto"},
   "homepage": "https://github.com/RintaroMatsumoto/notion-plugin",
   "repository": "https://github.com/RintaroMatsumoto/notion-plugin",
   "license": "MIT",
-  "keywords": ["notion", "knowledge-management", "claude", "productivity", "automation"]
+  "keywords": ["notion", "knowledge-management", "claude", "productivity", "automation"],
+  "skills": [
+    "notion-schema-setup",
+    "notion-bulk-edit",
+    "notion-sync",
+    "notion-cross-reference",
+    "notion-template-instantiate"
+  ]
 }

@@ -1,6 +1,6 @@
 # notion-plugin — Design Document
 
-> Status: Pre-release concept. This document captures design intent before implementation.
+> Status: V1 implemented (5 skills, stdlib-only Python). OAuth and richer block-type round-trip deferred to V2. This document captures both the original design intent and the shipped behavior.
 
 ## Architecture Overview
 
@@ -88,6 +88,11 @@ Sync state (cursor, content hashes) is stored in `.notion-sync/state.json` under
 
 ## Milestones
 
-- **MVP:** `notion-schema-setup` + `notion-bulk-edit`.
-- **V1:** add `notion-sync` with last-write-wins strategy.
-- **V2:** add `notion-cross-reference`, `notion-template-instantiate`, and OAuth authentication.
+- **MVP (shipped):** `notion-schema-setup` + `notion-bulk-edit`.
+- **V1 (shipped):** add `notion-sync` with last-write-wins strategy,
+  `notion-cross-reference`, and `notion-template-instantiate`. Python
+  stdlib only; mock transport for offline development.
+- **V2 (planned):** OAuth 2.0 authentication, block archival for true
+  push-replace in `notion-sync`, cross-database cross-referencing,
+  wider block-type round-trip coverage (to\_do / toggle / callout /
+  table), and LLM-driven schema inference for free-text briefs.
